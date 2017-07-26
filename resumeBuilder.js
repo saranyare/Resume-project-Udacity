@@ -1,3 +1,4 @@
+//object 1_bio
 var bio = {
     "name": "Saranya Ruiz-Esparza",
     "role": "Front-end Web developer",
@@ -44,6 +45,7 @@ var bio = {
 };
 bio.display();
 
+//object 2_education
 var education = {
     "schools": [
     {
@@ -112,6 +114,7 @@ var education = {
         
 education.display();
 
+//object 3_work
 var work = {
     "jobs": [
     {
@@ -154,7 +157,7 @@ var work = {
 };
         
 work.display();
-
+//object 4_project
 var project ={
     "projects": [{
         "title": "Make a stylish website project",
@@ -196,6 +199,7 @@ var project ={
 
 project.display();
 
+//To append the google map to the resume
 $("#mapDiv").append(googleMap);
 
 
