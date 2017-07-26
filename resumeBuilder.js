@@ -36,8 +36,7 @@ var bio = {
         for (var index in bio.skills) {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[index]);
             $("#skills:last").append(formattedSkill);
-        }
-        
+        }    
         
     }
         
@@ -156,7 +155,46 @@ var work = {
         
 work.display();
 
+var project ={
+    "projects": [{
+        "title": "Make a stylish website project",
+        "dates": "2017",
+        "description": "Use HTML and CSS making a website project for Intro to programming course at Udacity",
+       // "url": "https://github.com/saranyare/Make-a-stylish-website-Udacity"
+    },{
+        "title": "Make your own quiz project",
+        "dates": "2017",
+        "description": "Use Python making a fill-in-the-blank quiz project for Intro to programming course at Udacity",
+       // "url": "https://github.com/saranyare/Make-your-own-quiz-Udacity"
+    },{
+         "title": "Movie trailer website project",
+        "dates": "2017",
+        "description": "Use Python making a movie trailer website project for Intro to programming course at Udacity",
+       // "url": "https://github.com/saranyare/Movie-trailer-website-Udacity"
+    }],
+    
+    "display": function(){
+        
+        $("#projects").append(HTMLprojectStart);
+        
+        for (var finalproject in project.projects){
+            
+            var prTitle = HTMLprojectTitle.replace("%data%",
+            project.projects[finalproject].title);
+            var prDates = HTMLprojectDates.replace("%data%",
+            project.projects[finalproject].dates);
+            var prDescription = HTMLprojectDescription.replace("%data%",
+            project.projects[finalproject].description);
+          
+            $(".project-entry:last").append(prTitle, prDates, prDescription);
+            
+            
+        }
+    }
+    
+};
 
+project.display();
 
 $("#mapDiv").append(googleMap);
 
