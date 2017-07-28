@@ -54,14 +54,14 @@ var education = {
         "degree": "B.Sc.",
         "major": "Biology",
         "dates": "1999-2003",
-        "url": "http://www.tsu.ac.th/eng/contact.php"
+        "url": "https://www.tsu.ac.th/eng/contact.php"
     },{
         "name": "Sukhothai University",
         "location": "Bangkok, Thailand",
         "degree": "Teaching",
         "major": "Teaching certificate",
         "dates": "2004-2006",
-        "url": "http://www.tsu.ac.th/eng/contact.php"
+        "url": "https://www.tsu.ac.th/eng/contact.php"
     }
     ],
     
@@ -70,7 +70,7 @@ var education = {
         "title": "Udacity",
         "school": "Intro to programming",
         "dates": "2017",
-        "url": "http://www.udacity.com",
+        "url": "https://www.udacity.com",
         
     }],
 
